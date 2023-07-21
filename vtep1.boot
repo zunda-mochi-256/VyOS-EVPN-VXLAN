@@ -174,15 +174,15 @@ set protocols bgp address-family ipv4-unicast redistribute connected
 set protocols bgp address-family l2vpn-evpn advertise-all-vni
 set protocols bgp neighbor 192.0.2.33 address-family ipv4-unicast
 set protocols bgp neighbor 192.0.2.33 address-family l2vpn-evpn
-set protocols bgp neighbor 192.0.2.33 remote-as '64511'
+set protocols bgp neighbor 192.0.2.33 remote-as '64510'
 set protocols bgp neighbor 192.0.2.129 peer-group 'backbone_EVPN_VXLAN'
-set protocols bgp neighbor 192.0.2.129 remote-as '64512'
+set protocols bgp neighbor 192.0.2.129 remote-as '64511'
 set protocols bgp neighbor 192.0.2.131 peer-group 'backbone_EVPN_VXLAN'
-set protocols bgp neighbor 192.0.2.131 remote-as '64512'
+set protocols bgp neighbor 192.0.2.131 remote-as '64511'
 set protocols bgp parameters router-id '192.0.2.1'
 set protocols bgp peer-group backbone_EVPN_VXLAN address-family ipv4-unicast
 set protocols bgp peer-group backbone_EVPN_VXLAN address-family l2vpn-evpn
-set protocols bgp system-as '64511'
+set protocols bgp system-as '64510'
 set service ntp allow-client address '0.0.0.0/0'
 set service ntp allow-client address '::/0'
 set service ntp server time1.vyos.net
